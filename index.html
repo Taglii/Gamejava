@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Jogo de Adivinhação</h1>
+        <p>Sorteie um número e tente acertá-lo!</p>
+        <div class="game-area">
+            <div class="input-area">
+                <button id="startButton" onclick="startGame()">Sortear Número</button>
+                <input type="number" id="guessInput" placeholder="Digite seu palpite" min="1" max="100" disabled>
+                <button onclick="checkGuess()" disabled>Chutar</button>
+                <p id="resultMessage"></p>
+                <p id="statusMessage"></p>
+            </div>
+            <div class="guess-area">
+                <h2>Palpites Anteriores:</h2>
+                <ul id="guessList"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
